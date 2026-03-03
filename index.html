@@ -76,7 +76,7 @@
     <p>Dados sincronizados via Google Sheets · <span id="lastUpdate" style="color:#68d391;">Carregando...</span></p>
   </div>
   <div class="header-right">
-    <span class="badge">Carteira Itaú</span>
+    <span class="badge">Itaú Personnalité</span>
     <button class="btn-refresh" id="btnRefresh" onclick="loadData()">
       <span id="refreshIcon">🔄</span> Atualizar
     </button>
@@ -173,7 +173,7 @@ function renderDashboard(funds, projecao) {
     <div class="stat-card"><span class="stat-icon">💰</span><div class="label">Patrimônio Total</div><div class="value">R$ ${total.toFixed(2)}</div><div class="sub">${funds.length} ativos na carteira</div></div>
     <div class="stat-card"><span class="stat-icon">🛡️</span><div class="label">Reserva de Emergência</div><div class="value">R$ ${reserva.toFixed(2)}</div><div class="sub">${(reserva/total*100).toFixed(1)}% do total</div></div>
     <div class="stat-card"><span class="stat-icon">📈</span><div class="label">Construção Patrimonial</div><div class="value">R$ ${construcao.toFixed(2)}</div><div class="sub">${(construcao/total*100).toFixed(1)}% do total</div></div>
-    <div class="stat-card"><span class="stat-icon">⏳</span><div class="label">Projeção (${lastProj[mesKey]} meses)</div><div class="value">R$ ${parseFloat(fmt(lastProj[projKey])).toLocaleString('pt-BR',{minimumFractionDigits:0})}</div><div class="sub">Total aportado: R$ ${totalAportado.toLocaleString('pt-BR',{minimumFractionDigits:0})}</div><div class="sub neutral" style="font-size:0.72rem;">Média mensal: R$ ${mediaAporte.toLocaleString('pt-BR',{minimumFractionDigits:0})}</div></div>
+    <div class="stat-card"><span class="stat-icon">💸</span><div class="label">Aportes</div><div class="value">R$ ${totalAportado.toLocaleString('pt-BR',{minimumFractionDigits:2})}</div><div class="sub">Média mensal: R$ ${mediaAporte.toLocaleString('pt-BR',{minimumFractionDigits:2})}</div></div>
     <div class="stat-card"><span class="stat-icon">⚡</span><div class="label">Perfil de Risco</div><div class="value" style="font-size:1.1rem;margin-top:4px;">Moderado</div><div class="sub neutral">Diversificado</div></div>
   `;
 
